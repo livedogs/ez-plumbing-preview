@@ -570,9 +570,13 @@ footer a:hover { color: #fff; }
 @keyframes badge-spin { to { transform: rotate(360deg); } }
 .hero-card { position: relative; }
 .page-hero { position: relative; overflow: hidden; }
-.page-hero .badge-rot { top: auto; left: auto; bottom: 44px; right: 6%; width: 128px; height: 128px; }
+.page-hero .badge-rot {
+  position: static; display: block;
+  margin-top: 42px;
+  width: 116px; height: 116px;
+}
 @media (max-width: 960px) {
-  .badge-rot { display: none; }
+  .badge-rot, .page-hero .badge-rot { display: none; }
 }
 
 /* ---------- Side rail (section nav) ---------- */
