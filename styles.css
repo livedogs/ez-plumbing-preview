@@ -188,6 +188,7 @@ h1, h2, h3, h4 {
 .hero {
   position: relative;
   background:
+    radial-gradient(800px 400px at 15% 120%, rgba(226, 87, 31, 0.45), transparent 60%),
     radial-gradient(1200px 600px at 85% -10%, rgba(95, 113, 97, 0.4), transparent 60%),
     linear-gradient(160deg, rgba(30, 28, 23, 0.93) 0%, rgba(38, 36, 30, 0.88) 55%, rgba(50, 60, 50, 0.85) 130%),
     url("assets/photos/about-header.jpg") center 35% / cover no-repeat,
@@ -500,7 +501,6 @@ h1, h2, h3, h4 {
 /* ---------- CTA band ---------- */
 .cta-band {
   background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16'%3E%3Cpath fill='%23e2571f' fill-opacity='0.18' d='M0 16L16 0v16zM16 16L32 0v16z'/%3E%3C/svg%3E") bottom left / 32px 16px repeat-x,
     radial-gradient(800px 400px at 15% 120%, rgba(226, 87, 31, 0.35), transparent 60%),
     var(--charcoal);
   color: #fff; text-align: center;
