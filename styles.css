@@ -207,7 +207,12 @@ h1, h2, h3, h4 {
   position: relative; z-index: 1;
   display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px;
   align-items: center;
-  padding: 96px 0 110px;
+  padding: 96px 0 176px;
+}
+/* home hero badge: bottom-right, matching interior pages */
+.hero > .badge-rot {
+  top: auto; left: auto; bottom: 24px; right: 6%;
+  width: 128px; height: 128px; z-index: 2;
 }
 .hero h1 {
   font-family: var(--font-hero);
