@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EZ Plumbing &amp; Heating | Honest Plumbers in Airdrie &amp; Calgary</title>
+<meta name="description" content="Honest advice. Quality workmanship. Fair prices. EZ Plumbing & Heating serves condos, businesses, and homes in Airdrie, Calgary and area since 2007. 24/7 emergency service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=trench-slab@300,400,500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="left"><span class="pulse-dot"></span>24/7 Emergency Service, Airdrie, Calgary &amp; Area</div>
+    <div class="right">Mon–Fri 8am–5pm &nbsp;·&nbsp; <a href="mailto:info@ezplumbingandheating.com">info@ezplumbingandheating.com</a></div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="container">
+    <a class="nav-logo" href="index.html">
+      <span class="mark"><img src="assets/ez-logo-white.svg" alt="EZ Plumbing &amp; Heating logo"></span>
+      <div class="word">Plumbing &amp; Heating<span>Airdrie · Calgary</span></div>
+    </a>
+    <ul class="nav-links">
+      <li class="has-dropdown">
+        <a href="services.html">Services <svg class="caret" aria-hidden="true"><use href="assets/icons.svg#chevron"/></svg></a>
+        <ul class="nav-dropdown">
+          <li><a href="boilers.html">Boiler Repair &amp; Installation</a></li>
+          <li><a href="combi-furnace.html">Combi Furnace Repair &amp; Installation</a></li>
+          <li><a href="plumbing-repairs.html">Plumbing Repairs</a></li>
+          <li class="all"><a href="services.html">All Services &rarr;</a></li>
+        </ul>
+      </li>
+      <li><a href="why-ez.html">Why EZ</a></li>
+      <li><a href="our-work.html">Our Work</a></li>
+      <li><a href="team.html">Team</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:4038999687">403-899-9687<small>Call or text</small></a>
+      <a class="btn btn-primary small" href="#book">Book a Service Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div>
+      <span class="hero-badge">Trusted in Airdrie &amp; Calgary since 2007</span>
+      <h1>Plumbing &amp; heating done <em>honestly.</em></h1>
+      <p class="lede">No pressure sales. No jargon. Just straight answers, quality workmanship, and a fair price for your condo, business, or home. That's the EZ way.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#book">Book a Service Call</a>
+        <a class="btn btn-ghost" href="tel:4038999687"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg> 403-899-9687</a>
+      </div>
+      <div class="hero-trust">
+        <div class="item"><div class="num">27+</div><div class="lbl">Years of experience</div></div>
+        <div class="item"><div class="num">2007</div><div class="lbl">Serving you since</div></div>
+        <div class="item"><div class="num">24/7</div><div class="lbl">Emergency service</div></div>
+        <div class="item"><div class="num">100%</div><div class="lbl">No-pressure promise</div></div>
+      </div>
+    </div>
+    <div class="hero-card">
+      <svg class="badge-rot" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="60" cy="60" r="58" fill="#23211c"/>
+        <circle cx="60" cy="60" r="49" fill="none" stroke="#faf7f2" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="3 4"/>
+        <defs><path id="badge-circ" d="M60 16a44 44 0 1 1-0.01 0"/></defs>
+        <text fill="#faf7f2" font-family="Montserrat, sans-serif" font-size="9.5" font-weight="700" letter-spacing="1.6">
+          <textPath href="#badge-circ">EZ PLUMBING &amp; HEATING · EST. 2007 ·</textPath>
+        </text>
+        <path fill="#e2571f" transform="translate(46,46) scale(1.17)" d="M12 0C13.2 6.8 17.2 10.8 24 12 17.2 13.2 13.2 17.2 12 24 10.8 17.2 6.8 13.2 0 12 6.8 10.8 10.8 6.8 12 0Z"/>
+      </svg>
+      <h3>What do you need help with?</h3>
+      <p>Pick one to start your booking. Takes under a minute.</p>
+      <div class="quick-options">
+        <button onclick="startBooking('Boiler / no heat')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#flame"/></svg> Boiler / no heat</button>
+        <button onclick="startBooking('No hot water')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#shower"/></svg> No hot water</button>
+        <button onclick="startBooking('Leak or drip')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#droplet"/></svg> Leak or drip</button>
+        <button onclick="startBooking('Blocked drain')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#drain"/></svg> Blocked drain</button>
+        <button onclick="startBooking('Frozen pipes')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#snowflake"/></svg> Frozen pipes</button>
+        <button onclick="startBooking('Something else')"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#wrench"/></svg> Something else</button>
+      </div>
+      <div class="or">or</div>
+      <div class="call-row"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg> Emergency? Call now: <a href="tel:4038999687">403-899-9687</a></div>
+    </div>
+  </div>
+</header>
+
+<div class="stripe-divider" aria-hidden="true"></div>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Services</span>
+      <h2>Whatever's leaking, freezing, or not heating, we've seen it.</h2>
+      <p>From a dripping tap to a full condo-building boiler system, EZ handles residential and commercial plumbing across Airdrie, Calgary and the surrounding area.</p>
+    </div>
+    <div class="services-grid">
+      <a class="service-card featured" href="boilers.html">
+        <span class="tag">Our Specialty</span>
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#flame"/></svg></div>
+        <h3>Boiler Repair &amp; Installation</h3>
+        <p>In-depth boiler service most plumbers don't offer. Condo buildings, in-floor heating, hot water systems. Diagnosed properly, explained clearly.</p>
+        <span class="link">Explore boiler services →</span>
+      </a>
+      <a class="service-card" href="combi-furnace.html">
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#combi"/></svg></div>
+        <h3>Combi Furnace Repair &amp; Installation</h3>
+        <p>Heating and endless on-demand hot water from one compact, high-efficiency unit, honestly sized for how you actually live.</p>
+        <span class="link">Explore combi services →</span>
+      </a>
+      <a class="service-card" href="plumbing-repairs.html">
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#wrench"/></svg></div>
+        <h3>Plumbing Repairs</h3>
+        <p>Faucets, toilets, burst pipes, drains, frozen lines. Repaired right, priced up front, available 24/7 for emergencies.</p>
+        <span class="link">Explore repair services →</span>
+      </a>
+      <a class="service-card" href="services.html">
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#shower"/></svg></div>
+        <h3>Water Heaters &amp; Tankless</h3>
+        <p>Repair and replacement of tank and tankless systems. Authorized dealer for Vesta Tankless and NTI hot water solutions.</p>
+        <span class="link">See all services →</span>
+      </a>
+      <a class="service-card" href="plumbing-repairs.html">
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#drain"/></svg></div>
+        <h3>Drain Cleaning</h3>
+        <p>Slow drains, recurring clogs, sewer backups. Cleared properly, with honest advice on preventing the next one.</p>
+        <span class="link">Explore repair services →</span>
+      </a>
+      <a class="service-card" href="#book">
+        <div class="icon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg></div>
+        <h3>24/7 Emergency Service</h3>
+        <p>Burst pipe at 2am? No heat in January? We answer the phone and we show up. Day or night.</p>
+        <span class="link">Call 403-899-9687 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THE EZ WAY ============ -->
+<section class="section ezway" id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The EZ Way</span>
+      <h2>Water is transparent. Your plumber should be too.</h2>
+      <p>Most people don't know anything about boilers or plumbing, and they shouldn't have to. Our job is to make sure you understand exactly what's happening and why, so you can make the best decision for your home or property.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="n">01</div>
+        <h3>We listen</h3>
+        <p>You tell us what's going on. We ask the right questions and actually pay attention. No rushing you off the phone, no assumptions.</p>
+      </div>
+      <div class="step">
+        <div class="n">02</div>
+        <h3>We educate</h3>
+        <p>We show you what we found, explain your options in plain language, and give you real prices up front. You'll never be talked into anything.</p>
+      </div>
+      <div class="step">
+        <div class="n">03</div>
+        <h3>We fix it right</h3>
+        <p>Quality workmanship at a fair price, done by plumbers who take pride in their craft, and stand behind it when it counts.</p>
+      </div>
+    </div>
+    <div class="no-pressure">
+      <svg class="shield" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div>
+        <h4>Our No-Pressure Promise</h4>
+        <p>We will never pressure-sell you anything. If you want a second opinion, we'll happily give you the names of other good plumbers to call. We'd rather earn your trust than win one job. That's how we've done it since 2007.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Stand For</span>
+      <h2>Plumbers of character.</h2>
+      <p>We're working to change what people expect from the trades, one honest service call at a time.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6l7-3z"/></svg></div>
+        <h3>Honesty first</h3>
+        <p>Even when it's hard. If we make a mistake, we own it and make it right. No excuses, no runaround.</p>
+      </div>
+      <div class="value">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 00-5.4 5.4l-5.6 5.6a1.5 1.5 0 002.1 2.1l5.6-5.6a4 4 0 005.4-5.4l-2.4 2.4-2.1-2.1 2.4-2.4z"/></svg></div>
+        <h3>Quality workmanship</h3>
+        <p>Done right the first time, by tradespeople who care about the details you'll never see.</p>
+      </div>
+      <div class="value">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.8 2.5-1.8s2.5.7 2.5 1.7c0 2.6-5 1.6-5 4.3 0 1 1 1.8 2.5 1.8s2.5-.8 2.5-1.8"/></svg></div>
+        <h3>Fair pricing</h3>
+        <p>Upfront, transparent quotes. You'll know the price before we start, and why it costs what it costs.</p>
+      </div>
+      <div class="value">
+        <div class="icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 00-3-3.87"/></svg></div>
+        <h3>Neighbours, not numbers</h3>
+        <p>You're more than a customer. You're a friend and a neighbour. We serve the community we live in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOILER FEATURE ============ -->
+<section class="section boiler-feature">
+  <div class="container boiler-split">
+    <div class="visual">
+      <img src="assets/photos/boilers-passion.webp" alt="NTI boiler installed by EZ Plumbing &amp; Heating" loading="lazy">
+    </div>
+    <div>
+      <span class="eyebrow">Boiler Specialists</span>
+      <h2 style="font-size: clamp(1.8rem, 3vw, 2.4rem); margin-bottom: 14px;">The boiler guys condo boards and property managers call.</h2>
+      <p style="color: var(--muted);">Boilers are where most plumbers tap out, and where we go deeper. Boiler manufacturer reps recommend us by name because we service these systems more thoroughly than most.</p>
+      <ul class="check-list">
+        <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>In-depth boiler diagnosis, repair &amp; full system installation</li>
+        <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>Condo &amp; apartment building hot water systems</li>
+        <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>In-floor heating repair and maintenance</li>
+        <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>Annual maintenance plans for property managers</li>
+      </ul>
+      <a class="btn btn-dark" href="boilers.html">Explore Boiler Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Work</span>
+      <h2>The buildings behind the wrenches.</h2>
+      <p>From condo towers to family homes, here's a look at the properties and systems we take care of around Airdrie and Calgary.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="thumb t1">
+          <img src="assets/photos/simple-to-complex.webp" alt="EZ technicians working on a condo building boiler" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="cat">Commercial · Condo</span>
+          <h3>Condo Building Boiler Replacement</h3>
+          <p>Full boiler system replacement for a multi-unit building, planned around residents so nobody lost hot water.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="thumb t2">
+          <img src="assets/photos/session-54.webp" alt="Valve on a residential heating system" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="cat">Residential</span>
+          <h3>In-Floor Heating Restoration</h3>
+          <p>Diagnosed and restored an in-floor heating system that two other companies couldn't figure out.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="thumb t3">
+          <img src="assets/photos/we-build-trust.webp" alt="EZ technicians at a commercial job site" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="cat">Commercial</span>
+          <h3>Business Tankless Conversion</h3>
+          <p>Converted a local business to Vesta tankless hot water. Lower bills, endless hot water, happier staff.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEAM ============ -->
+<section class="section tight" id="team" style="background: var(--cream-2);">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Meet the Team</span>
+      <h2>The people showing up at your door.</h2>
+      <p>Real plumbers, real neighbours. Every EZ team member is chosen for their character as much as their craft.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="photo"><img src="assets/photos/josh.webp" alt="Josh Bucholtz, Owner / Operator" loading="lazy"></div>
+        <h3>Josh Bucholtz</h3>
+        <p>Owner / Operator · 27 years</p>
+      </div>
+      <div class="team-card">
+        <div class="photo"><img src="assets/photos/daniel.webp" alt="Daniel Entz, Foreman" loading="lazy"></div>
+        <h3>Daniel Entz</h3>
+        <p>Foreman · 12 years</p>
+      </div>
+      <div class="team-card">
+        <div class="photo">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+          <span class="ph-label"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#camera"/></svg> New team photo</span>
+        </div>
+        <h3>Team Member</h3>
+        <p>Plumber</p>
+      </div>
+      <div class="team-card">
+        <div class="photo">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
+          <span class="ph-label"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#camera"/></svg> New team photo</span>
+        </div>
+        <h3>Team Member</h3>
+        <p>Apprentice</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Reviews</span>
+      <h2>Don't take our word for it.</h2>
+      <p>Here's what your neighbours in Airdrie and Calgary say about working with EZ.</p>
+    </div>
+    <div class="quote-grid">
+      <div class="quote">
+        <div class="stars" aria-label="5 stars"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg></div>
+        <p>"Professional, prompt, and they actually explained what was wrong instead of just handing me a bill. The price was fair and the work was excellent."</p>
+        <div class="who">Residential Customer<span>Airdrie, AB</span></div>
+      </div>
+      <div class="quote">
+        <div class="stars" aria-label="5 stars"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg></div>
+        <p>"We manage several condo buildings and EZ is the only company we trust with our boilers. Communication is fantastic and they always follow through."</p>
+        <div class="who">Property Manager<span>Calgary, AB</span></div>
+      </div>
+      <div class="quote">
+        <div class="stars" aria-label="5 stars"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#star"/></svg></div>
+        <p>"Competitive pricing and honest advice. They even told us when a repair we thought we needed wasn't necessary. You don't find that often."</p>
+        <div class="who">Commercial Customer<span>Airdrie, AB</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="section booking" id="book">
+  <div class="container">
+    <div class="booking-shell">
+      <div class="booking-side">
+        <h2>Book a service call</h2>
+        <p>Let us know what's going on and we'll take care of you the EZ way.</p>
+        <ul class="expect">
+          <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>We'll confirm your appointment by phone or text</li>
+          <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>Upfront pricing before any work begins</li>
+          <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>Licensed, insured &amp; background-checked plumbers</li>
+          <li><span class="chk"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#check"/></svg></span>No pressure. Ever.</li>
+        </ul>
+        <div class="window-note">
+          <strong><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#clock"/></svg> About arrival times:</strong> service calls are booked in 2-hour arrival windows so our plumbers can give every job the time it deserves. We'll text you when we're on the way.
+        </div>
+      </div>
+      <div class="booking-form">
+        <div class="form-progress">
+          <div class="bar active" data-bar="1"></div>
+          <div class="bar" data-bar="2"></div>
+          <div class="bar" data-bar="3"></div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="form-step active" data-step="1">
+          <h3>What do you need help with?</h3>
+          <p class="hint">This helps us send the right plumber with the right parts.</p>
+          <div class="choice-grid" data-group="service">
+            <button class="choice" data-value="Boiler / no heat"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#flame"/></svg> Boiler / no heat</button>
+            <button class="choice" data-value="No hot water"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#shower"/></svg> No hot water</button>
+            <button class="choice" data-value="Leak or drip"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#droplet"/></svg> Leak or drip</button>
+            <button class="choice" data-value="Blocked drain"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#drain"/></svg> Blocked drain</button>
+            <button class="choice" data-value="Frozen pipes"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#snowflake"/></svg> Frozen pipes</button>
+            <button class="choice" data-value="Renovation / install"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#tools"/></svg> Renovation / install</button>
+            <button class="choice" data-value="Something else"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#wrench"/></svg> Something else</button>
+          </div>
+          <div class="form-nav">
+            <span></span>
+            <button class="btn btn-primary" onclick="nextStep(2)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="form-step" data-step="2">
+          <h3>Tell us about the property.</h3>
+          <p class="hint">Condo boards &amp; property managers: we specialize in multi-unit buildings.</p>
+          <div class="choice-grid" data-group="property">
+            <button class="choice" data-value="House"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#home"/></svg><span>House<small>Detached / duplex / townhouse</small></span></button>
+            <button class="choice" data-value="Condo / apartment"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#building"/></svg><span>Condo or apartment<small>Unit or whole building</small></span></button>
+            <button class="choice" data-value="Business"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#store"/></svg><span>Business<small>Commercial space</small></span></button>
+            <button class="choice" data-value="Property manager"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#clipboard"/></svg><span>I manage properties<small>Multiple buildings / units</small></span></button>
+          </div>
+          <h3 style="font-size:1.05rem;">How urgent is it?</h3>
+          <div class="choice-grid" data-group="urgency" style="margin-top:14px;">
+            <button class="choice" data-value="Emergency"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg><span>Emergency<small>Active leak / no heat now</small></span></button>
+            <button class="choice" data-value="Soon"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg><span>This week<small>It's a problem, not a crisis</small></span></button>
+            <button class="choice" data-value="Flexible"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#clock"/></svg><span>I'm flexible<small>Quote or planned work</small></span></button>
+          </div>
+          <div class="form-nav">
+            <button class="btn btn-outline" onclick="prevStep(1)">← Back</button>
+            <button class="btn btn-primary" onclick="nextStep(3)">Continue →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="form-step" data-step="3">
+          <h3>Almost done. How do we reach you?</h3>
+          <p class="hint">We'll confirm your 2-hour arrival window by phone or text.</p>
+          <div class="field-row">
+            <div class="field"><label>Name</label><input type="text" id="f-name" placeholder="Your name"></div>
+            <div class="field"><label>Phone</label><input type="tel" id="f-phone" placeholder="403-555-0123"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>Email</label><input type="email" id="f-email" placeholder="you@email.com"></div>
+            <div class="field"><label>Preferred day</label>
+              <select id="f-day">
+                <option>As soon as possible</option>
+                <option>Morning (8am–12pm)</option>
+                <option>Afternoon (12pm–5pm)</option>
+                <option>I'll discuss when you call</option>
+              </select>
+            </div>
+          </div>
+          <div class="field"><label>Anything else we should know? (optional)</label><textarea id="f-notes" rows="3" placeholder="e.g. Boiler is in the basement mechanical room, building has 24 units…"></textarea></div>
+          <div class="form-nav">
+            <button class="btn btn-outline" onclick="prevStep(2)">← Back</button>
+            <button class="btn btn-primary" onclick="submitBooking()">Request My Service Call</button>
+          </div>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="form-success" data-step="success">
+          <div class="big-check"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12.5l5 5L20 6.5"/></svg></div>
+          <h3>Request received!</h3>
+          <p>Thanks. We've got your details. Someone from EZ will call or text you shortly to confirm your 2-hour arrival window. If it's an emergency, don't wait: <strong><a href="tel:4038999687" style="color:var(--orange);">403-899-9687</a></strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Good to Know</span>
+      <h2>Questions we hear a lot.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>My hot water / in-floor heating stopped working. What should I do first?<span class="plus">+</span></summary>
+        <div class="answer">Check that your thermostat has power and your gas is on. If both look fine, don't start taking things apart. Boiler systems are complex and easy to make worse. Give us a call and we'll walk you through what to check safely before we even book a visit.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you really not pressure-sell? What's the catch?<span class="plus">+</span></summary>
+        <div class="answer">No catch. We'll lay out your options with real prices, tell you what we'd do in your shoes, and let you decide. If you want to shop around, we'll even suggest other reputable plumbers to get quotes from. We win on trust, not tactics.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do your arrival windows work?<span class="plus">+</span></summary>
+        <div class="answer">We book service calls in 2-hour arrival windows rather than exact times. That way our plumbers never have to rush the job before yours, and yours gets the same respect. We'll text you when we're on the way.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you work with condo boards and property managers?<span class="plus">+</span></summary>
+        <div class="answer">Yes, it's one of our specialties. We service and install boiler and hot water systems for multi-unit buildings across Airdrie and Calgary, and boiler manufacturer reps regularly recommend us for this exact work. Ask about maintenance plans.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Are you available for emergencies?<span class="plus">+</span></summary>
+        <div class="answer">24/7. Burst pipes, floods, and no-heat calls in an Alberta winter can't wait until Monday. Call 403-899-9687 any time and you'll reach a real person.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section class="section cta-band">
+  <div class="container">
+    <span class="eyebrow">Ready When You Are</span>
+    <h2>Let's make this EZ.</h2>
+    <p>One call or one minute online. Either way, you'll get an honest answer and a plumber who shows up.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="#book">Book a Service Call</a>
+      <a class="btn btn-ghost" href="tel:4038999687"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg> 403-899-9687</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<div class="stripe-divider" aria-hidden="true"></div>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="mark"><img src="assets/ez-logo-white.svg" alt="EZ Plumbing &amp; Heating logo"></span>
+        <p>Honest advice, quality workmanship, and fair prices for condos, businesses, and homes across Airdrie, Calgary and the surrounding area. Since 2007.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="boilers.html">Boiler Repair &amp; Installation</a></li>
+          <li><a href="combi-furnace.html">Combi Furnace Repair &amp; Installation</a></li>
+          <li><a href="plumbing-repairs.html">Plumbing Repairs</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="why-ez.html">The EZ Way</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="our-work.html">Our Work</a></li>
+          <li><a href="#book">Book Online</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:4038999687">403-899-9687</a></li>
+          <li><a href="mailto:info@ezplumbingandheating.com">info@ezplumbingandheating.com</a></li>
+          <li>112 100 Flett Pl NE<br>Airdrie, AB T4B 1N4</li>
+          <li>24/7 Emergency Service</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EZ Plumbing &amp; Heating Ltd. All rights reserved.</span>
+      <span>Licensed &amp; insured · Serving Airdrie, Calgary &amp; area</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-call"><a href="tel:4038999687"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg> Call EZ Now: 403-899-9687</a></div>
+
+<script>
+// ---------- Booking form ----------
+const state = { service: null, property: null, urgency: null };
+
+document.querySelectorAll('.choice-grid').forEach(grid => {
+  const group = grid.dataset.group;
+  grid.querySelectorAll('.choice').forEach(btn => {
+    btn.addEventListener('click', () => {
+      grid.querySelectorAll('.choice').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      state[group] = btn.dataset.value;
+    });
+  });
+});
+
+function showStep(n) {
+  document.querySelectorAll('.form-step, .form-success').forEach(s => s.classList.remove('active'));
+  const el = document.querySelector(`[data-step="${n}"]`);
+  if (el) el.classList.add('active');
+  document.querySelectorAll('.form-progress .bar').forEach(b => {
+    b.classList.toggle('active', +b.dataset.bar <= (n === 'success' ? 3 : n));
+  });
+}
+function nextStep(n) { showStep(n); }
+function prevStep(n) { showStep(n); }
+
+function submitBooking() {
+  // In production: POST to the booking/CRM endpoint (e.g. Jobber) here.
+  showStep('success');
+}
+
+// Hero quick-start buttons: preselect the service and jump to the form
+function startBooking(service) {
+  state.service = service;
+  const grid = document.querySelector('[data-group="service"]');
+  grid.querySelectorAll('.choice').forEach(b => {
+    b.classList.toggle('selected', b.dataset.value === service);
+  });
+  showStep(1);
+  document.getElementById('book').scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
