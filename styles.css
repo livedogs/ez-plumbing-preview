@@ -581,7 +581,7 @@ footer a:hover { color: #fff; }
 
 /* ---------- Side rail (section nav) ---------- */
 .side-rail {
-  position: fixed; left: 18px; top: 50%;
+  position: fixed; right: 18px; top: 50%;
   transform: translateY(-50%);
   z-index: 90;
   display: flex; flex-direction: column; align-items: center; gap: 2px;
@@ -615,8 +615,8 @@ footer a:hover { color: #fff; }
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23e2571f' d='M12 0C13.2 6.8 17.2 10.8 24 12 17.2 13.2 13.2 17.2 12 24 10.8 17.2 6.8 13.2 0 12 6.8 10.8 10.8 6.8 12 0Z'/%3E%3C/svg%3E") no-repeat center / contain;
 }
 .side-rail .lbl {
-  position: absolute; left: calc(100% + 16px); top: 50%;
-  transform: translateY(-50%) translateX(-6px);
+  position: absolute; right: calc(100% + 16px); top: 50%;
+  transform: translateY(-50%) translateX(6px);
   background: var(--charcoal); color: #fff;
   font-family: var(--font-head); font-weight: 700;
   font-size: 0.66rem; letter-spacing: 0.09em; text-transform: uppercase;
